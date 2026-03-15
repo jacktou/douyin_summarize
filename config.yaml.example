@@ -1,0 +1,19 @@
+# Copy to config.yaml and fill in your values
+
+# ── API Keys ──
+kimi_api_key: "sk-your-moonshot-api-key"
+bibigpt_api_key: ""              # Get at https://bibigpt.co — needed for bibigpt mode
+
+# ── BibiGPT mode (default, recommended) ──
+# No cookies/whisper/ffmpeg needed — just the two API keys above
+
+# ── Local mode (--mode local) ──
+cookies_path: "./cookies.txt"    # Netscape format, export from browser
+whisper_model: "small"           # small/medium/large-v3
+whisper_device: "cpu"            # cpu/cuda
+whisper_compute_type: "int8"     # int8 for CPU, float16 for GPU
+
+# ── Common ──
+output_dir: "./output"
+max_videos: 1
+proxy: ""                        # e.g. http://127.0.0.1:7890
